@@ -16,7 +16,7 @@ import io
 
 def create_eda_agent(api_key, model, temperature, max_tokens, df):
     try:
-        llm = ChatGoogleGenerativeAI(api_key=api_key, model=model, temperature=temperature, max_output_tokens=max_tokens)
+        llm = ChatGoogleGenerativeAI(google_api_key=api_key, model=model, temperature=temperature, max_output_tokens=max_tokens)
     except GoogleUnauthorized:
         st.error("Invalid Gemini API Key.")
         return None
@@ -70,8 +70,6 @@ def main():
 
     if clear_history:
         st.session_state.chat_history = []
-    
-    # st.sidebar.markdown('<p style="text-align: center;">Made with ❤️ by Akshat Gupta</p>')
 
     st.sidebar.markdown(
         """
