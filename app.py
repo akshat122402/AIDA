@@ -58,7 +58,7 @@ def capture_output():
 
 def main():
     st.title("AIDA: AI Data Analyzer🤖🧑‍💻")
-    st.caption("Effortlessly analyze and visualize your data with AI-powered insights using Google's Gemini.")
+    st.caption("Effortlessly analyze and visualize your data with AI-powered insights using Google's Gemini and Langchain's Pandas Agent.")
 
     st.sidebar.header("Configuration")
     model = st.sidebar.selectbox("Select Model", ["gemini-1.5-pro", "gemini-1.5-flash", "gemini-1.0-pro"])
@@ -96,9 +96,6 @@ def main():
             </a>
             <a href="https://www.linkedin.com/in/akshat-gupta-a82923227/" target="_blank">
                 <img src="https://img.icons8.com/material-outlined/48/000000/linkedin.png" alt="LinkedIn"/>
-            </a>
-            <a href="mailto:akki2429@gmail.com" target="_blank">
-                <img src="https://img.icons8.com/ios-filled/50/gmail-new.png" alt="Gmail"/>
             </a>
         </div>
         """,
