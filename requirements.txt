@@ -1,4 +1,8 @@
 streamlit
+streamlit-lottie
+streamlit-extras
+plotly
+seaborn
 langchain-google-genai
 langchain-experimental
 google-api-core
