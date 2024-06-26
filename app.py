@@ -106,7 +106,7 @@ def create_eda_agent(api_key, model, temperature, max_tokens, df):
     except GoogleUnauthorized:
         st.error("Invalid Gemini API Key.")
         return None
-    return create_pandas_dataframe_agent(llm, df, agent_type="tool-calling", verbose=True)
+    return create_pandas_dataframe_agent(llm, df, agent_type="tool-calling", verbose=True, allow_dangerous_code=True)
 
 def load_data(file):
     extension = file.name.split('.')[-1]
